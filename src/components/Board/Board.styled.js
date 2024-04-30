@@ -18,6 +18,10 @@ export const BoardComp = styled.div`
 export const Box = styled.div`
     width:100px;
     height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: ${({ cursor }) => cursor ? 'not-allowed' : 'pointer'};
     border:2px solid green;
     `
 
