@@ -11,7 +11,7 @@ export const BoardWpr = styled.div`
 
 export const BoardComp = styled.div`
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: ${({ size }) => `repeat(${size}, auto)`};
     gap:10px;
     /* border: 2px solid red; */
 `
